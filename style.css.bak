@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fdf6fd;
+  color: #3d2c53;
+}
+
+header {
+  background: #7b2cbf;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f3c4fb;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  color: white;
+}
+
+.profile-img {
+  width: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.project-item {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(123, 44, 191, 0.2);
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(123, 44, 191, 0.3);
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #f3c4fb;
+}
+
+.project-info h3 {
+  color: #7b2cbf;
+  margin-bottom: 8px;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+}
+
+.resume-box {
+  background: #fff0fb;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(123, 44, 191, 0.15);
+  max-width: 800px;
+  margin: auto;
+}
+
+.resume-box h3 {
+  margin-bottom: 10px;
+  color: #7b2cbf;
+}
+
+.resume-box h4 {
+  margin-top: 20px;
+  color: #5a189a;
+  font-size: 1.2rem;
+}
+
+.resume-box p, .resume-box ul {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.resume-box ul {
+  padding-left: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #7b2cbf;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.download-btn:hover {
+  background: #ff6ec4;
+}
+
+footer {
+  background: #5a189a;
+  color: #e5dbf8;
+  text-align: center;
+  padding: 20px;
+}

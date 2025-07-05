@@ -1,0 +1,2 @@
+// You can add interactivity here later, like form validation, animations, etc.
+console.log("Portfolio Loaded");
